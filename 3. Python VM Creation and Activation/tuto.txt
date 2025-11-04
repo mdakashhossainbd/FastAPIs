@@ -1,1 +1,8 @@
 
+
+VM Creating Command:
+    python -m venv env
+
+Activation: 
+    1. Change Powershell to Command
+    2. Drage activate to this cmd. Done.
