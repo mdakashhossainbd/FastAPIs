@@ -1,0 +1,30 @@
+Querys:
+select * from tb1
+select name from tb1
+select inst,name from tb1
+selct inst,name as full_name from tb1
+
+select * from tb_01 where inst='Md Akash Hossain';
+select * from tb_01 where dur>3;
+
+Validation:
+select * from tb_01 where name = 'SQL' and dur=3;
+
+select * from tb_01 where name in ('Python','SQL')
+
+Finding with Naming first 2 character:
+select * from tb_01 where name like 'Py%'
+select * from tb_01 where name like '%Science%'
+
+If want to order table by a specific column:
+select * from tb_01 order by dur
+If want to order by desending order: 
+select * from tb_01 order by dur desc
+If wan to to order same values rows also follow the ID order:
+SELECT * FROM tb_01 ORDER BY dur desc, id asc
+
+Insert Data to a table: 
+insert into tb_01(name, inst, dur, website) values('Machine learning', 'Mst Tushi Khatun',2, 'https://www.google.com')
+
+Update Data: 
+update tb_01 set inst='Tushi Khatun' where id=6;
